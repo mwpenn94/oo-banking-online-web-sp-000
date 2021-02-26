@@ -10,6 +10,10 @@ class BankAccount
     @status = "open"
   end
   
+  def withdraw(value)
+    @balance -= value
+  end
+  
   def deposit(value)
     @balance += value
   end
